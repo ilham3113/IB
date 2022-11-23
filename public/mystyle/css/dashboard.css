@@ -1,0 +1,205 @@
+body{
+    background: var(--bg-main);
+    margin-right: 20px;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+}
+
+
+
+
+/* ==== content === */
+
+/* === dashboard === */
+div.top{
+    gap: 1rem;
+}
+
+div.top > div{
+    background-color: rgb(255, 255, 255);
+    padding: 0.7rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 2rem 3rem gray;
+    transition: all 500 ease;
+}
+
+div.top > div h1{
+    text-align: center;
+    color: var(--color-text);
+}
+
+div.top > div h3{
+    text-align: center;
+    color:var(--color-text);
+}
+
+#blogdashbord{
+    width: 353px !important;
+    height: 353px !important;
+}
+div.top > div:hover{
+    box-shadow: none;
+}
+
+div.top > div span{
+    background-color: blue;
+    padding: 0.5rem;
+    border-radius: 20%;
+    color: white;
+    font-size: 2rem;
+}
+
+div.top > div.category span{
+    background: rgb(3, 100, 3);
+}
+
+div.top h3.draf span{
+    background: rgb(132, 0, 255);
+}
+
+/* === populer  Blog ===*/
+div.populer-blog h2{
+    margin-top: 2.5rem;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+div.populer-blog table{
+    background: white;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    border-radius: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2rem 3rem gray;
+    padding: 2rem;
+    transition: all 500ms ease;
+}
+
+div.populer-blog table:hover{
+    box-shadow: none;
+}
+
+div.populer-blog tr.title th{
+    color: white;
+    background-color: rgb(75, 87, 255);
+    padding-top: 1rem 0 1rem;
+    border-bottom: 0;
+    border-radius: 3rem;
+}
+
+div.populer-blog td.no,
+div.populer-blog th.no{
+    width: 4%;
+
+}
+
+div.populer-blog td.title,
+div.populer-blog th.title{
+    width: 65%;
+}
+
+div.populer-blog td.category,
+div.populer-blog th.category{
+    width: 15%;
+}
+
+div.populer-blog td.date,
+div.populer-blog th.date{
+    width: 10px;
+}
+div.populer-blog td{
+    height: 2rem;
+    border-bottom: 0 ;
+    color: var(--color-text);
+}
+
+div.populer-blog table tbody tr:last-child td{
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+
+
+/* blog */
+
+
+/* === main category === */
+div.preview{
+    background-color: white;
+    padding: 20px;
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow-1);
+    margin-bottom: 2rem;
+}
+main.show h1{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main.category{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    padding-bottom: 0.3rem;
+    text-align: center;
+    background: var(--bg-white);
+    border-radius: 2rem;
+    box-shadow: 0 2rem 3rem gray;
+    transition: all 500ms ease;
+}
+
+main.category tr.title th{
+    background: rgb(0, 207, 69);
+    color: white;
+    border-radius: 2rem;
+    border: none;
+}
+
+main.category th.no,
+main.category td.no{
+    width: 5%;
+}
+main.category th.name,
+main.category td.name{
+    width: 70%;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 765px){
+
+    div.top{
+        grid-template-columns: 1fr;
+    }
+
+    div.populer-blog table{
+        font-size: 15px;
+    }
+
+    div.populer-blog td.date,
+    div.populer-blog th.date{
+        display:none;
+    }
+    
+    main.category{
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    main.category th.name,
+    main.category td.name{
+    width: 50%;
+    text-align: left;
+}
+ .text-edit{
+    display: none;
+ }
+}
+

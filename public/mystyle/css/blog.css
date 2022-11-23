@@ -1,0 +1,68 @@
+div.blog-top {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+table.table-blog {
+    background: white;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+table.table-blog tr td{
+    padding-left: 20px;
+}
+.drop{
+    background: rgba(255, 255, 255, 0.836);
+}
+
+.form{
+    border: 0;
+    background: var(--bg-white);
+    outline: none;
+    box-shadow: 0 1rem 2rem gray;
+    transform: scaleX(1);
+    transition: all 500ms ease;
+    margin-bottom: 2.3rem;
+}
+
+.form:focus{
+    outline: none;
+    border: 0;
+    background: var(--bg-white);
+    box-shadow: none;
+    transform: scaleX(1);
+    transition: all 500ms ease;
+}
+
+.input-body{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--bg-white) ;
+}
+
+.image img{
+    padding-left: 1rem;
+    width: 250px;
+    margin-bottom: 1rem;
+}
+
+.canvas{
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 2rem;
+    color: rgba(43, 43, 248, 0.829);
+}
+
+@media screen and (max-width: 1024px) {
+ .form{
+    margin-bottom: 1.2rem;
+ }
+
+ .form-floating{
+    padding: 0;
+ }
+}

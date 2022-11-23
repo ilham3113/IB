@@ -1,0 +1,14 @@
+:root {
+    --color-main: #858383;
+    --font-main: "Playfair Display", Georgia, "Times New Roman", serif;
+    --bg-main: rgb(221, 221, 221);
+    --color-bg: rgb(223, 219, 219);
+    --bg-white: rgb(255, 255, 255);
+    --color-1: rgb(22, 22, 22);
+    --box-shadow-1: 0 2rem 3rem rgba(128, 128, 128, 0.541);
+    --color-text:#1d1d1dee;
+}
+
+.dark-theme{
+    --bg-main : #181a1e;
+}
